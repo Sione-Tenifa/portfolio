@@ -5,9 +5,7 @@
   font-family: "Arial", sans-serif;
   /* color: #0d3b66; */
 }
-.boot{
-  background-color: red;
-}
+
 .imgHome{
   display: block;
   /* margin: 10px ; */
@@ -37,7 +35,7 @@
 }
 .about {
   width: 100%;
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
   display: flex;
   flex-direction: column;
   justify-content: center;

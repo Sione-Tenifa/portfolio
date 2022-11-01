@@ -10,6 +10,11 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import emailjs from 'emailjs-com'
+// import Contact from "../pages/Contact";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
+
 
 
 
@@ -31,10 +36,13 @@ function Home() {
         </Row>
           <div className="prompt">
             <p>A software developer with a passion for learning and Coaching.</p>
+            <p>This site was built using </p>
+            <p>React | HTML | CSS | BootStrap</p>
             <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/sionetenifa/'>
             <LinkedInIcon  />
             </a>
-            <EmailIcon />
+            <a href="/contact" rel="noreferrer"> 
+            <EmailIcon /></a>
             <a target='_blank' rel='noreferrer' href='https://github.com/Sione-Tenifa'>
               <GithubIcon />
             </a>
