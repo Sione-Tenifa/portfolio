@@ -1,0 +1,152 @@
+.home {
+  border: 0;
+  width: 100%;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  /* color: #0d3b66; */
+}
+.boot{
+  background-color: red;
+}
+.imgHome{
+  display: block;
+  /* margin: 10px ; */
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+
+.portrait{
+  border-radius: 50%;
+  width: 370px;
+  height: 350px;
+  box-shadow: .75em .75em 1em  10px #031d44;
+  /* filter: drop-shadow(.75em .75em); */
+  margin-top: 10rem;
+  color:  black;
+}
+
+.col1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.about {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  /* background-image: linear-gradient(20deg, #0b132b, #023e8a);
+  background-color: #21325e; */
+  background-image: url(./mountains.avif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #f0f0f0;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.about h2 {
+  font-family: 'Source Code Pro', monospace;
+  /* font-size: 80px; */
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  color: #002855;
+  /* height: 50px; */
+  position: relative;
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  width: max-content;
+  /* outline: 2px solid red; */
+}
+
+/* .about h2::before, */
+/* .about h2::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.about h2::before{
+  background: #023e8a;
+  animation: 
+  typewriter 4s steps(20) forwards;
+}
+@keyframes typewriter {
+  to { 
+    left :100%;
+  }
+} */
+
+.about .prompt {
+  width: 40%;
+  font-size: 30px;
+}
+.prompt{
+  margin-top: 100px;
+}
+.prompt svg {
+  font-size: 60px;
+  margin: 5px;
+  color: white;
+}
+
+.skills {
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Source Code Pro', monospace;
+  background-image: linear-gradient(180deg, #0b132b, #023e8a);
+  background-color: #21325e;
+}
+
+.skills h1 {
+  color: white;
+}
+
+.skills .list {
+  list-style: none;
+  width: 60%;
+  color: white;
+
+}
+
+.list span {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+}
