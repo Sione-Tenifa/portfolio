@@ -1,7 +1,14 @@
 .contact{
     display: flex;
     flex-flow: column;
-    height: 800px;
-    
+    margin-bottom: 50px;
 }
 
+.contactdiv{
+    margin-bottom: 20px;
+}
+
+.imgContact{
+    width: 33%;
+    height: 500px;
+}

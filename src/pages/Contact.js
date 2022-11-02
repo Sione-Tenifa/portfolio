@@ -7,6 +7,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image'
+import family from "../assets/sionefam.jpeg"
+import coach from "../assets/coaching.jpeg"
+import officer from "../assets/officer.jpeg"
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
 
 
 function Contact() {
@@ -22,7 +28,7 @@ function Contact() {
       setValidated(true);
     };
   return (
-    <Container fluid='lg'>
+    <Container className="contactdiv"fluid='lg'>
     <div className="contact" >
       <h1> Contact Me!</h1>
       <div className="contactform">
@@ -65,6 +71,39 @@ function Contact() {
       </Button>
     </Form>
     </div>
+    <Container>
+      <CardGroup>
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className="imgContact" variant="top" src={family} />
+          <Card.Body>
+            <Card.Title>My little Family!</Card.Title>
+            <Card.Text>
+              This is my beautiful wife Alexis and son A.J. 
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className="imgContact" variant="top" src={coach} />
+          <Card.Body>
+            <Card.Title>My Passion For Coaching!</Card.Title>
+            <Card.Text>
+              I've been coaching for four years. I love watching the youth I coach grow and push their limits. 
+            </Card.Text>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: '18rem' }}>
+          <Card.Img className="imgContact" variant="top" src={officer} />
+          <Card.Body>
+            <Card.Title>What I wanted to be when I grew up. </Card.Title>
+            <Card.Text>
+              Being a police officer was my childhood dream. After spending 5 years in Law enforcment, 
+              I decided to change careers and go after another passion. Software Development!
+              Software Development gives me to opportunity to help people everywhere!
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </CardGroup>
+    </Container>
     </Container>
     //Add content here 
   );
